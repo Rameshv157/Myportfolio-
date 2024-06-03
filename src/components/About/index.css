@@ -1,0 +1,59 @@
+.about-bg-container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+
+.main-heading {
+  text-align: center;
+  font-size: 10px;
+  color: #a9ba9d;
+  margin-bottom: 40px;
+}
+
+.about-heading {
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerrr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.education-container {
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.icon {
+  font-size: 30px;
+}
+
+.para {
+  width: 600px;
+  text-align: start;
+}

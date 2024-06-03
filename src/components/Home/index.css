@@ -1,0 +1,112 @@
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 300px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.about-details {
+  text-align: center;
+  line-height: 5px;
+}
+
+.profile-name {
+  font-size: 30px;
+}
+
+.frontend {
+  color: #687169;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.download-button {
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-right: 15px;
+  cursor: pointer;
+  outline: none;
+  transition: color 0.2s linear;
+  position: relative;
+}
+
+.contact-button {
+  background-color: #1c1d1e;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-right: 15px;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+
+
+.download-button::before {
+  border-radius: 20px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #00ffff;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.btn1::before {
+  transform: scaleX(0);
+}
+/* .btn2::before{
+  transform: scaleY(0);
+} */
+.btn1:hover::before {
+  transform: scaleX(1);
+ 
+}
+/* .btn2:hover::before{
+  transform: scaleY(1);
+} */
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icon {
+  font-size: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #000000;
+}
+
+.hyper-link {
+  text-decoration: none;
+  color: #1c1d1e;
+}
+
+.hyper-links {
+  text-decoration: none;
+  color: #ffffff;
+}

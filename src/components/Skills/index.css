@@ -1,0 +1,82 @@
+.all-slills-main-container {
+  font-family: sans-serif;
+}
+
+.explore-heading {
+  font-family: sans-serif;
+  font-size: 10px;
+  text-align: center;
+}
+
+.development {
+  color: #a9ba9d;
+}
+
+.explore-topic-name {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.skills-main-bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.both-skils-containers {
+  display: flex;
+  align-items: center;
+}
+
+.skills-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skills-name-item {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  width: 120px;
+  padding-left: 60px;
+}
+
+/* .skills {
+  flex-wrap: wrap;
+} */
+
+.course-name {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.course-level {
+  color: dimgrey;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.icon-course {
+  font-size: 15px;
+}
