@@ -14,7 +14,7 @@ const About = () => (
       </div>
 
       <div className="skills-container">
-        <img src="Untitled design (2).png" alt="my-pic" className="my-pic" />
+        <img src="Untitled_design__.png" alt="my-pic" className="my-pic" />
         <div className="containerrr">
           <div className="education-container">
             <p>
@@ -29,9 +29,12 @@ const About = () => (
           </div>
 
           <p className="para">
-            As a graduate in bachelor of technology, who studied cutting edge
-            designing technologies as part of curriculum, I am actively looking
-            for opportunities into Web development (frontend).
+              <big>A</big>spiring React JS and JavaScript developer with a strong
+            foundation in front-end development. Eager to contribute to
+            developing robust front-end solutions, creating responsive user
+            interfaces, and implementing scalable REST APIs as part of the
+            Infosys team. Committed to high customer satisfaction and continuous
+            learning.
           </p>
         </div>
       </div>

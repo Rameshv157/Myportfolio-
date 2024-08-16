@@ -8,18 +8,31 @@
   font-family: sans-serif;
 }
 
-
 .main-heading {
   text-align: center;
-  font-size: 10px;
-  color: #a9ba9d;
+  font-size: 15px;
+  /* color: #a9ba9d; */
+  color: brown;
   margin-bottom: 40px;
+  position: relative;
+  animation-name: main-headings;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+}
+
+@keyframes main-headings {
+  from {
+    top: -200px;
+  }
+  to {
+    top: 0px;
+  }
 }
 
 .about-heading {
   font-weight: 700;
   color: #000000;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .skills-container {
@@ -27,6 +40,19 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  position: relative;
+  animation-name: skils;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes skils {
+  from {
+    bottom: -200px;
+  }
+  to {
+    bottom: 0px;
+  }
 }
 
 .containerrr {
@@ -41,6 +67,12 @@
   height: 250px;
   border-radius: 10px;
   margin-right: 20px;
+  transition: transform 0.1s ease-in-out;
+}
+
+.my-pic:hover {
+  transform: scale(1.1);
+  background-color: #ff5757;
 }
 
 .education-container {

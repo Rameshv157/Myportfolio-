@@ -16,11 +16,42 @@
   width: 300px;
   border-radius: 50%;
   margin-right: 20px;
+  transition: transform 1s ease-in-out;
+  position: relative;
+  animation-name: profile-image;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+.profile-image:hover {
+  transform: scale(1.1);
+}
+
+@keyframes profile-image {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 0px;
+  }
 }
 
 .about-details {
   text-align: center;
   line-height: 5px;
+  position: relative;
+  animation-name: example;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+}
+
+@keyframes example {
+  from {
+    left: 200px;
+  }
+  to {
+    left: 0px;
+  }
 }
 
 .profile-name {
@@ -56,8 +87,12 @@
   cursor: pointer;
   outline: none;
   text-decoration: none;
+  transition: transform 0.2s ease-in-out;
 }
 
+.contact-button:hover {
+  transform: scaleX(1.2);
+}
 
 .download-button::before {
   border-radius: 20px;
@@ -81,7 +116,6 @@
 } */
 .btn1:hover::before {
   transform: scaleX(1);
- 
 }
 /* .btn2:hover::before{
   transform: scaleY(1);
@@ -99,6 +133,11 @@
   margin-right: 10px;
   margin-left: 10px;
   color: #000000;
+  transition: transform 0.1s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.2);
 }
 
 .hyper-link {

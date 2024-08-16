@@ -4,17 +4,37 @@
 
 .explore-heading {
   font-family: sans-serif;
-  font-size: 10px;
+  font-size: 15px;
   text-align: center;
+  color: brown;
+  position: relative;
+  animation-name: explore-head;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes explore-head {
+  from {
+    left: 0px;
+    top: 400px;
+  }
+  to {
+    left: 0px;
+    top: 0px;
+  }
 }
 
 .development {
-  color: #a9ba9d;
+  /* color: #a9ba9d; */
+  color: brown;
 }
 
 .explore-topic-name {
+  width: 50px;
   font-size: 30px;
   font-weight: 600;
+  color: black;
 }
 
 .skills-main-bg-container {
@@ -36,11 +56,27 @@
   align-content: center;
   align-items: center;
   padding: 20px;
-  border: 2px solid #000000;
+  border: 2px solid brown;
   border-radius: 15px;
-  width: 400px;
+  width: 450px;
   height: 200px;
   margin: 10px;
+  position: relative;
+  animation-name: skills-container;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes skills-container {
+  from {
+    left: 0px;
+    top: 400px;
+  }
+  to {
+    left: 0px;
+    top: 0px;
+  }
 }
 
 .skills-container {
@@ -56,12 +92,23 @@
   display: flex;
   /* justify-content: center; */
   align-items: center;
-  width: 120px;
+  width: 150px;
   padding-left: 60px;
+  transition: transform 0.1s linear;
+  cursor: pointer;
+}
+
+.skills-name-item:hover {
+  transform: scale(1.1);
 }
 
 /* .skills {
-  flex-wrap: wrap;
+  transition: transform 1s linear;
+  cursor: pointer;
+} */
+
+/* .skills:hover{
+  transform: scale(1.1);
 } */
 
 .course-name {
@@ -78,5 +125,5 @@
 }
 
 .icon-course {
-  font-size: 15px;
+  width: 30px;
 }

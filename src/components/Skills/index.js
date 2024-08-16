@@ -1,6 +1,6 @@
 import Header from "../Header";
 
-import { TbRosetteDiscountCheckFilled } from "react-icons/tb";
+// import { TbRosetteDiscountCheckFilled } from "react-icons/tb";
 
 import "./index.css";
 
@@ -16,25 +16,29 @@ const Skills = () => (
           <h2 className="development">Frontend Development</h2>
           <div className="skills-container">
             <div className="skills-name-item">
-              <TbRosetteDiscountCheckFilled className="icon-course" />
+              <img src="html-img.png" alt="html-logo" className="icon-course" />
               <div className="skills">
                 <p className="course-name">
-                  HTML <br />
+                  HTML5 <br />
                   <span className="course-level">Advance</span>
                 </p>
               </div>
             </div>
             <div className="skills-name-item">
-              <TbRosetteDiscountCheckFilled className="icon-course" />
+              <img src="css-image.png" alt="css-logo" className="icon-course" />
               <div className="skills">
                 <p className="course-name">
-                  CSS <br />
+                  CSS3 <br />
                   <span className="course-level">Advance</span>
                 </p>
               </div>
             </div>
             <div className="skills-name-item">
-              <TbRosetteDiscountCheckFilled className="icon-course" />
+              <img
+                src="javascript.png"
+                alt="javascript-logo"
+                className="icon-course"
+              />
               <div className="skills">
                 <p className="course-name">
                   JAVA SCRIPT <br />
@@ -43,7 +47,7 @@ const Skills = () => (
               </div>
             </div>
             <div className="skills-name-item">
-              <TbRosetteDiscountCheckFilled className="icon-course" />
+              <img src="react.png" alt="react-logo" className="icon-course" />
               <div className="skills">
                 <p className="course-name">
                   REACT JS <br />
@@ -52,7 +56,11 @@ const Skills = () => (
               </div>
             </div>
             <div className="skills-name-item">
-              <TbRosetteDiscountCheckFilled className="icon-course" />
+              <img
+                src="bootstrap.png"
+                alt="bootstrap-logo"
+                className="icon-course"
+              />
               <div className="skills">
                 <p className="course-name">
                   BOOTSTRAP <br />
@@ -62,7 +70,7 @@ const Skills = () => (
             </div>
           </div>
         </div>
-        <div className="skills-main-container">
+        {/* <div className="skills-main-container">
           <h2 className="development">Backend Development</h2>
           <div className="skills-container">
             <div className="skills-name-item">
@@ -111,7 +119,7 @@ const Skills = () => (
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   </div>

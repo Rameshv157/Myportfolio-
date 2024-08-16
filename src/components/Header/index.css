@@ -17,7 +17,7 @@
   color: #3a3b3c;
 }
 
-.link:hover{
+.link:hover {
   color: brown;
 }
 
@@ -27,8 +27,24 @@
 
 .list-item {
   background-color: transparent;
+  font-weight: 600;
   border: none;
   color: #3a3b3c;
   font-size: 15px;
   margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.1s linear;
+}
+
+.list-items {
+  color: brown;
+}
+
+button:not(.list-item) {
+  color: brown;
+}
+
+.list-item:hover {
+  transform: scale(1.1);
+  color: brown;
 }

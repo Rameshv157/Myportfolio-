@@ -13,6 +13,7 @@ const Home = () => (
           src="Untitleddesign(1)Cropped.png"
           alt="name"
           className="profile-image"
+          id="profile"
         />
         <div className="about-details">
           <p>Hello I'm</p>
@@ -23,8 +24,8 @@ const Home = () => (
             <button type="button" className="download-button btn1">
               <a
                 className="hyper-link"
-                href="Resume.pdf"
-                download="RameshVemulaResume.pdf"
+                href="VRResume.pdf"
+                download="VRResume.pdf"
               >
                 Download Resume
               </a>
