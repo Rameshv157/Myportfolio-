@@ -19,7 +19,7 @@
   transition: transform 1s ease-in-out;
   position: relative;
   animation-name: profile-image;
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -33,13 +33,13 @@
     left: 0px;
   }
   25% {
-    left: -200px;
+    left: -100px;
   }
   50% {
     left: 0px;
   }
   75% {
-    left: -200px;
+    left: -100px;
   }
   100% {
     left: 0px;
