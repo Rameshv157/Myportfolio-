@@ -19,8 +19,9 @@
   transition: transform 1s ease-in-out;
   position: relative;
   animation-name: profile-image;
-  animation-duration: 2s;
+  animation-duration: 5s;
   animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .profile-image:hover {
@@ -28,12 +29,27 @@
 }
 
 @keyframes profile-image {
-  from {
+  0% {
+    left: 0px;
+  }
+  25% {
+    left: -200px;
+  }
+  50% {
+    left: 0px;
+  }
+  75% {
+    left: -200px;
+  }
+  100% {
+    left: 0px;
+  }
+  /* from {
     left: -200px;
   }
   to {
     left: 0px;
-  }
+  } */
 }
 
 .about-details {
