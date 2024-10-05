@@ -1,45 +1,80 @@
-// import { Link } from "react-router-dom";
 import { Link } from "react-router-dom";
-// import { useState } from "react";
+import { useState } from "react";
 import "./index.css";
 
-const Header = () => {
-  // const [isTrue, setIsTrue] = useState(true);
+// React Mobile Menu Icons
+import { TbMenuDeep } from "react-icons/tb";
+import { IoClose } from "react-icons/io5";
 
-  // const onCliked = () => {
-  //   setIsTrue(!true);
-  // };
+const Header = () => {
+  const [isTrue, setIsTrue] = useState(false);
+
+  const toggleMenu = () => {
+    setIsTrue(!isTrue);
+  };
 
   // const navLink = isTrue ? "list-items" : "list-itemss";
 
   return (
-    <div>
+    <>
       <nav className="bg-navbar">
         <p className="name">
           <Link to="/" className="link">
             Ramesh Vemula
           </Link>
         </p>
-        <div>
-          <Link to="/">
-            <button className="list-item ">Home</button>
-          </Link>
+        {/* Mobile Menu */}
+        <div className="mobile-menu">
+          <button type="button" onClick={toggleMenu}>
+            {isTrue ? <IoClose /> : <TbMenuDeep />}
+          </button>
+          {isTrue ? (
+            <div className="mobile-menu-tabs-container">
+              <ul>
+                <Link to="/" className="link">
+                  <li>Home</li>
+                </Link>
+                <Link to="/about" className="link">
+                  <li>About</li>
+                </Link>
+                <Link to="/skills" className="link">
+                  <li>Skills</li>
+                </Link>
+                <Link to="/projects" className="link">
+                  <li>Projects</li>
+                </Link>
+                <Link to="/contact-me" className="link">
+                  <li>Contact Me</li>
+                </Link>
+              </ul>
+            </div>
+          ) : (
+            ""
+          )}
+        </div>
+        {/* Large Diplay Menu */}
+        <div className="large-display-menu">
+          <div>
+            <Link to="/">
+              <button className="list-item ">Home</button>
+            </Link>
 
-          <Link to="/about">
-            <button className="list-item">About</button>
-          </Link>
-          <Link to="/skills">
-            <button className="list-item">Skills</button>
-          </Link>
-          <Link to="/projects">
-            <button className="list-item">Projects</button>
-          </Link>
-          <Link to="/contact">
-            <button className="list-item">Contact</button>
-          </Link>
+            <Link to="/about">
+              <button className="list-item">About</button>
+            </Link>
+            <Link to="/skills">
+              <button className="list-item">Skills</button>
+            </Link>
+            <Link to="/projects">
+              <button className="list-item">Projects</button>
+            </Link>
+            <Link to="/contact-me">
+              <button className="list-item">Contact Me</button>
+            </Link>
+          </div>
         </div>
       </nav>
-    </div>
+    </>
   );
 };
 export default Header;

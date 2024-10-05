@@ -1,20 +1,27 @@
 .contact-bg-container {
-  height: 70vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* overflow: auto; */
   font-family: sans-serif;
 }
 
 .contact-heading {
-  font-size: 15px;
+  font-size: 10px;
   color: brown;
   text-align: center;
   position: relative;
   animation-name: contact-name;
   animation-timing-function: ease-in-out;
   animation-duration: 4s;
+}
+
+@media screen and (min-width: 767px) {
+  .contact-heading {
+    font-size: 15px;
+  }
 }
 
 @keyframes contact-name {
@@ -30,20 +37,33 @@
   color: #000000;
   text-align: center;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 19px;
+}
+
+@media screen and (min-width: 767px) {
+  .span-contat-heading {
+    font-size: 30px;
+  }
 }
 
 .contact-details-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 2px solid #000000;
   border-radius: 10px;
-  padding: 5px 10px;
+  padding: 20px 0 0 10px;
   margin-top: 40px;
   position: relative;
   animation-name: contact-container;
   animation-duration: 4s;
+}
+
+@media screen and (min-width: 767px) {
+  .contact-details-container {
+    flex-direction: row;
+  }
 }
 
 @keyframes contact-container {
@@ -72,12 +92,13 @@
 .email {
   margin-left: 5px;
   margin-right: 30px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .anchor-element {
   text-decoration: none;
   color: #000000;
+  padding-top: 5px;
 }
 
 .anchor-element:hover {
@@ -90,4 +111,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items: center; */
+}
+
+.label {
+  font-size: 17px;
 }

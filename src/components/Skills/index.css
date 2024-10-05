@@ -1,12 +1,7 @@
-.all-slills-main-container {
+.page-heading {
   font-family: sans-serif;
-}
-
-.explore-heading {
-  font-family: sans-serif;
-  font-size: 15px;
   text-align: center;
-  color: brown;
+  line-height: 0.1;
   position: relative;
   animation-name: explore-head;
   animation-duration: 1s;
@@ -25,50 +20,55 @@
   }
 }
 
-.development {
-  /* color: #a9ba9d; */
+.page-heading p {
+  font-size: 17px;
   color: brown;
 }
 
-.explore-topic-name {
-  width: 50px;
-  font-size: 30px;
-  font-weight: 600;
+.page-heading h1 {
   color: black;
+  font-size: 25px;
+  font-weight: 700;
 }
 
-.skills-main-bg-container {
+.technologies-cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.both-skils-containers {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 993px) {
+  .technologies-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-.skills-main-container {
+h3 {
+  font-family: sans-serif;
+  color: brown;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+
+.skills-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
   align-items: center;
-  padding: 20px;
-  border: 2px solid brown;
-  border-radius: 15px;
-  width: 450px;
-  height: 200px;
-  margin: 10px;
   position: relative;
-  animation-name: skills-container;
+  animation-name: skill-card-animation;
   animation-duration: 1s;
   animation-timing-function: linear;
   animation-direction: alternate;
+  margin: 15px;
 }
 
-@keyframes skills-container {
+@keyframes skill-card-animation {
   from {
     left: 0px;
     top: 400px;
@@ -79,51 +79,71 @@
   }
 }
 
-.skills-container {
+.skills-card {
+  border: 2px solid brown;
+  border-radius: 10px;
+  width: 200px;
+  /* height: 350px; */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 576px) {
+  .skills-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .skills-card {
+    width: 450px;
+    height: 200px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.skill-card {
+  width: 150px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.skills-name-item {
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  width: 150px;
-  padding-left: 60px;
-  transition: transform 0.1s linear;
-  cursor: pointer;
-}
-
-.skills-name-item:hover {
-  transform: scale(1.1);
-}
-
-/* .skills {
   transition: transform 1s linear;
   cursor: pointer;
-} */
+}
 
-/* .skills:hover{
+@media screen and (min-width: 767px) {
+  .skill-card {
+    margin-right: 15px;
+  }
+}
+
+.skill-card:hover {
   transform: scale(1.1);
-} */
-
-.course-name {
-  color: #000000;
-  font-size: 15px;
-  font-weight: 600;
-  margin: 10px;
 }
 
-.course-level {
-  color: dimgrey;
-  font-size: 10px;
-  font-weight: normal;
+.skill-card img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background-size: cover;
 }
 
-.icon-course {
-  width: 30px;
+.skill-card p {
+  padding-top: 6px;
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 700px;
+  text-align: center;
 }

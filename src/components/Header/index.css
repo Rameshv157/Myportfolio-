@@ -1,5 +1,6 @@
 .bg-navbar {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   font-family: sans-serif;
@@ -10,6 +11,18 @@
 .name {
   font-size: 25px;
   font-weight: 600;
+}
+
+/* Large Menu */
+
+.large-display-menu {
+  display: none;
+}
+
+@media screen and (min-width: 767px) {
+  .large-display-menu {
+    display: block;
+  }
 }
 
 .link {
@@ -27,6 +40,7 @@
 
 .list-item {
   background-color: transparent;
+  padding-bottom: 15px;
   font-weight: 600;
   border: none;
   color: #3a3b3c;
@@ -47,4 +61,58 @@ button:not(.list-item) {
 .list-item:hover {
   transform: scale(1.1);
   color: brown;
+}
+
+/* Mobile Menu */
+
+.mobile-menu {
+  display: block;
+}
+
+@media screen and (min-width: 767px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-menu button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.mobile-menu-tabs-container {
+  height: 270px;
+  width: 250px;
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  background-color: rgba(165, 42, 42, 0.786);
+  z-index: 4;
+  border-radius: 10px;
+  margin: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 576px) {
+  .mobile-menu-tabs-container {
+    right: 70px;
+    top: 40px;
+  }
+}
+
+.mobile-menu div ul li {
+  list-style-type: none;
+  border-bottom: 2px #fff solid;
+  margin: 15px 30px 0px 0px;
+  color: #fff;
+}
+
+.link {
+  text-decoration: none;
 }

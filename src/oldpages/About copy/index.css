@@ -1,0 +1,115 @@
+.about-bg-container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 15px;
+  /* color: #a9ba9d; */
+  color: brown;
+  margin-bottom: 40px;
+  position: relative;
+  animation-name: main-headings;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+}
+
+@keyframes main-headings {
+  from {
+    top: -200px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.about-heading {
+  font-weight: 700;
+  color: #000000;
+  font-size: 35px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation-name: skils;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@media screen and (min-width: 767px) {
+  .skills-container {
+    flex-direction: row;
+  }
+}
+
+@keyframes skils {
+  from {
+    bottom: -200px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+
+.containerrr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: transform 0.1s ease-in-out;
+}
+
+@media screen and (min-width: 767px) {
+  .my-pic {
+    margin-right: 20px;
+  }
+}
+
+.my-pic:hover {
+  transform: scale(1.1);
+  background-color: #ff5757;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.icon {
+  font-size: 30px;
+}
+
+.para {
+  text-align: start;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .para {
+    width: 800px;
+    height: 60px;
+  }
+}

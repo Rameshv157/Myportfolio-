@@ -1,26 +1,25 @@
-import Header from "../Header";
-
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import "./index.css";
 
 const Home = () => (
   <div>
-    <Header />
     <div className="container1">
       <div className="about-container">
+        {/* {main Image} */}
         <img
           src="Untitleddesign(1)Cropped.png"
           alt="name"
           className="profile-image"
           id="profile"
         />
+        {/* {Content} */}
         <div className="about-details">
           <p>Hello I'm</p>
           <h3 className="profile-name">Ramesh Vemula</h3>
           <p className="frontend">Frontend Developer</p>
 
-          <div>
+          <div className="button-container">
             <button type="button" className="download-button btn1">
               <a
                 className="hyper-link"
