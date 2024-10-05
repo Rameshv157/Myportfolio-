@@ -73,7 +73,7 @@ const Skills = () => (
       </div>
       {/* Basic knowladge Technologies */}
       <div className="skills-container">
-        <h3>Frontend Basic knowladge Technologies</h3>
+        <h3>Frontend Basic Knowledge Technologies</h3>
         <div className="skills-card">
           {/* {Tailwind card - 1} */}
           <div className="skill-card">

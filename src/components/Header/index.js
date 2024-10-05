@@ -18,15 +18,17 @@ const Header = () => {
   return (
     <>
       <nav className="bg-navbar">
-        <p className="name">
-          <Link to="/" className="link">
-            Ramesh Vemula
-          </Link>
-        </p>
+        <Link to="/" className="link">
+          <p className="name">Ramesh Vemula</p>
+        </Link>
         {/* Mobile Menu */}
         <div className="mobile-menu">
           <button type="button" onClick={toggleMenu}>
-            {isTrue ? <IoClose /> : <TbMenuDeep />}
+            {isTrue ? (
+              <IoClose style={{ fontSize: "30px" }} />
+            ) : (
+              <TbMenuDeep style={{ fontSize: "30px" }} />
+            )}
           </button>
           {isTrue ? (
             <div className="mobile-menu-tabs-container">

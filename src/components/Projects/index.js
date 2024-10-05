@@ -6,7 +6,7 @@ const projects = [
     id: 1,
     projectName: "Todos Application",
     projectTitile:
-      "Todos List was built using HTML, CSS, Flex-box. Todos List is a Responsive Todos App.",
+      "Todos List was built using HTML, CSS, Flex-box, CURD Operations. Todos List is a Responsive Todos App.",
     projectsourcelink: "https://todoramesh.ccbp.tech/",
     projectImage: "todolist.png",
   },
@@ -23,7 +23,7 @@ const projects = [
     id: 3,
     projectName: "Wiki Search",
     projectTitile:
-      "Food Much was built using HTML, CSS, Flex-box. Food Much is a Responsive Food Delivery App.",
+      "Wikipedia was built using HTML, CSS, Flex-box, API Integration. Wikipedia Much is a Responsive App.",
     projectsourcelink: "https://wikisearchrv.ccbp.tech/",
     projectImage:
       "https://rahlegal.in/wp-content/uploads/2015/10/Wikipedia-Profile.jpg",

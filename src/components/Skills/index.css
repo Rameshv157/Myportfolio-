@@ -137,7 +137,8 @@ h3 {
   width: 40px;
   height: 40px;
   margin-right: 10px;
-  background-size: cover;
+  /* background-size: cover; */
+object-fit: contain;
 }
 
 .skill-card p {
